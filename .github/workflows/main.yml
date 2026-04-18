@@ -5,7 +5,9 @@ on:
     branches: 
       - main
 env:
-  MY_NEW_VARIABLE: 'hello ''s world'
+  MY_NEW_VARIABLE: |
+      basil is very good
+      but he is not conforutable 
   
 jobs:
   example-job:
