@@ -5,14 +5,14 @@ on:
     branches: 
       - main
 env:
-  MY_NEW_VARIABLE: 'hello-\n world'
+  MY_NEW_VARIABLE: "hello-\n world"
   
 jobs:
   example-job:
     runs-on: ubuntu-latest
     steps:
       - name: Print a working-directory
-        run: echo $MY_NEW_VARIABLE
+        run: echo "$MY_NEW_VARIABLE"
         
       # - name: checkout repository
       #   uses: actions/checkout@v6.0.2
