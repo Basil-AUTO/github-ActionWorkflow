@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print a working-directory
-        run: echo $MY_NEW_VARIABLE
+        run: echo "$MY_NEW_VARIABLE"
         
       # - name: checkout repository
       #   uses: actions/checkout@v6.0.2
