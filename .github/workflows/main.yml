@@ -9,6 +9,6 @@ jobs:
 
     steps:
       - name: Print a working-directory
-        run: ehco "Welcome to our first GITHUB WorkFlow"
+        run: echo "Welcome to our first GITHUB WorkFlow"
         
     
