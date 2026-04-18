@@ -5,7 +5,7 @@ on:
     branches: 
       - main
 env:
-  MY_NEW_VARIABLE: 'hello-\\n world'
+  MY_NEW_VARIABLE: 'hello-\n world'
   
 jobs:
   example-job:
