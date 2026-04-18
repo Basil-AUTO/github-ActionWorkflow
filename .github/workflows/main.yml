@@ -1,0 +1,14 @@
+name: workflow Test
+on:
+  push:
+    branches: 
+      - main
+jobs:
+  example-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print a working-directory
+        run: ehco "Welcome to our first GITHUB WorkFlow"
+        
+    
