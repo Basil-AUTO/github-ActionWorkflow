@@ -4,13 +4,15 @@ on:
   push:
     branches: 
       - main
-
+env:
+  MY_NEW_VARIABLE: "hello-world"
+  
 jobs:
   example-job:
     runs-on: ubuntu-latest
     steps:
       - name: Print a working-directory
-        run: echo "Welcome to our\nfirst GITHUB WorkFlow"
+        run: echo $MY_NEW_VARIABLE
         
       # - name: checkout repository
       #   uses: actions/checkout@v6.0.2
