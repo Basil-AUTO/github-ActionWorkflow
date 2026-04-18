@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print a working-directory
-        run: echo "Welcome to our/nfirst GITHUB WorkFlow"
+        run: echo "Welcome to our\nfirst GITHUB WorkFlow"
         
       # - name: checkout repository
       #   uses: actions/checkout@v6.0.2
