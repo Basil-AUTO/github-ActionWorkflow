@@ -9,7 +9,7 @@ env:
       basil is very good
       but he is not conforutable 
       
-  YOU_NEW_VARIABLE: "HELLO \nWORLD"
+  YOU_NEW_VARIABLE: "HELLO\nWORLD"
   
 jobs:
   example-job:
