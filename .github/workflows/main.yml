@@ -8,7 +8,7 @@ env:
   MY_NEW_VARIABLE: >
       basil is very good
       but he is not conforutable 
-  YOU_NEW_VARIABLE: "HELLO \n WORLD"
+  YOU_NEW_VARIABLE: HELLO \n WORLD
   
 jobs:
   example-job:
