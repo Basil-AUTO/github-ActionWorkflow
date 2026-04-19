@@ -9,7 +9,7 @@ env:
       basil is very good
       but he is not conforutable 
       
-  YOU_NEW_VARIABLE: 'HELLO \n WORLD'
+  YOU_NEW_VARIABLE: "HELLO \nWORLD"
   
 jobs:
   example-job:
@@ -25,7 +25,7 @@ jobs:
         run: ls -la
       
       - name: print new environment varialble
-        run: echo -e "$YOU_NEW_VARIABLE"
+        run: echo "$YOU_NEW_VARIABLE"
         
         
     
