@@ -8,6 +8,8 @@ env:
   MY_NEW_VARIABLE: >
       basil is very good
       but he is not conforutable 
+      
+  YOU_NEW_VARIABLE: "HELLO\nWORLD"
   
 jobs:
   example-job:
@@ -22,7 +24,8 @@ jobs:
       - name: list repository
         run: ls -la
       
-
+      - name: print new environment varialble
+        run: echo "$YOU_NEW_VARIABLE"
         
         
     
