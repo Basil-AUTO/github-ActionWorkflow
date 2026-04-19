@@ -1,20 +1,19 @@
 #!/bin/bash
 
-# src/test.sh
-
+#src/test.sh
 EXPECTED= "Hello, Test!"
 
-OUTPUT= $(node -e "console.log(require('./src/app')('test'))")
+OUTPUT= $(node -e "console.log(require(`./src/app`)(`Test`))")
 
 if( "$ OUTPUT" == "$EXPORTED"); then
 
-echo " Test Passed "
+echo "Test Passed!"
 
 exit 0
 
 else
 
-echo "Test faild"
+echo "Test faild!"
 
 exit 1
 
