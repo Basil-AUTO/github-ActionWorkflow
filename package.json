@@ -1,0 +1,10 @@
+{
+    "name": "github-action-workflow",
+    "version": "1.0.0",
+    "description": "A simple GitHub Action Workflow example",
+    "main": "src/app.js",
+    "scripts": {
+        "test": "bash src/app.js"
+    },
+    "depndencies": {}
+}
