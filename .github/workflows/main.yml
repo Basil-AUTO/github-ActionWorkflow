@@ -24,7 +24,7 @@ jobs:
         run: ls -la
       
       - name: print new environment varialble
-        run: echo "$YOU_NEW_VARIABLE"
+        run: echo $YOU_NEW_VARIABLE
         
         
     
