@@ -4,7 +4,7 @@
     "description": "A simple GitHub Action Workflow example",
     "main": "src/app.js",
     "scripts": {
-        "test": "bash src/app.js"
+        "test": "bash ./src/app.js"
     },
     "depndencies": {}
 }
