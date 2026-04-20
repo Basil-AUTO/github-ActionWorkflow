@@ -13,7 +13,7 @@ exit 0
 
 else
 
-echo "Test faild!"
+echo "Test completely failed!"
 
 exit 1
 
