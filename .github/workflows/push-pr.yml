@@ -2,10 +2,10 @@ on:
   push:
     branches:
       - main
-      - "release/**"
+      # - "release/**"
 
     paths:
-      - "./src/**"
+      - "src/**"
       #- ".github/workflows/**" # Runs if workflow files change
   pull_request:
     branches:
