@@ -1,9 +1,13 @@
+name: Push and Pull Request Workflow
 on:
   push:
     branches:
       - main
+      # - "release/**"
+
     paths:
       - "src/**"
+      #- ".github/workflows/**" # Runs if workflow files change
   pull_request:
     branches:
       - main
@@ -15,5 +19,6 @@ jobs:
     steps:
       - name: checkout repository
         uses: actions/checkout@v6.0.2
+
       - name: Run tests
         run: npm test
