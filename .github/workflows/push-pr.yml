@@ -5,7 +5,7 @@ on:
       - "release/**"
 
     paths:
-      - "src/**"
+      - "./src/**"
       #- ".github/workflows/**" # Runs if workflow files change
   pull_request:
     branches:
