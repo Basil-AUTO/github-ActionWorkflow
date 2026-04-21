@@ -1,10 +1,18 @@
-on: 
+name: Handle Incident Report
+
+on:
   repository_dispatch:
     types: [incident_report]
+
 jobs:
-  handel_incedent:
+  handle_incident:
     runs-on: ubuntu-latest
     steps:
-      - name: sami
-      - run: echo "Inndident report"
+      - name: Checkout code
+        uses: actions/checkout@v4
       
+      - name: Sami step
+        run: echo "Sami handling incident report"
+      
+      - name: Print incident
+        run: echo "Incident report received"
