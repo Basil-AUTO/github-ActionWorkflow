@@ -1,0 +1,11 @@
+on: 
+  repository_dispatch:
+    types:
+      - incident_report
+jobs:
+  handel_incedent:
+    runs-on: ubuntu-slim
+    steps:
+      - name: Print incident details
+      - run: echo "Inndident report"
+      
