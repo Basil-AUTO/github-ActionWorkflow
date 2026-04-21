@@ -3,7 +3,7 @@ on:
     types: [incident_report]
 jobs:
   handel_incedent:
-    runs-on: ubuntu-slim
+    runs-on: ubuntu-latest
     steps:
       - name: Print incident details
       - run: echo "Inndident report"
