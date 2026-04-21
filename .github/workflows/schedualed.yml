@@ -1,0 +1,12 @@
+name: new github action with schedual
+on:  
+  schedule:
+    - cron: 0 * * * 1
+    - cron: 5 * * * 6
+jobs:
+  schedual_test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: just echo test
+        run: echo "this is just test"
+  
