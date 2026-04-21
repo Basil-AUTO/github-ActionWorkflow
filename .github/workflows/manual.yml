@@ -17,5 +17,5 @@ jobs:
     runs-on: ubuntu-slim
     steps:
       - name: Deploy application
-        run: echo "sent new appliction to production environment"
+        run: echo "sent new appliction to ${{inputs.environment}} environment"
   
