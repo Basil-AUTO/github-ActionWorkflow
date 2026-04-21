@@ -1,4 +1,4 @@
-name: make any related
+name: Make Any Related Jobs
 
 on: 
   workflow_dispatch: 
@@ -7,26 +7,26 @@ jobs:
   job_1:
     runs-on: ubuntu-latest
     steps:
-      - name: job nubmer 1
-      - run: "echo job ${{ github_job }}"
+      - name: Job number 1
+        run: echo "Running job ${{ github.job }}"
+
   job_2:
     runs-on: ubuntu-latest
     needs: job_1
     steps:
-      - name: job number 2
-      - run: "echo job ${{ github_job }}"
+      - name: Job number 2
+        run: echo "Running job ${{ github.job }}"
 
   job_3:
     runs-on: ubuntu-latest
     needs: job_1
     steps:
-      - name: job nubmer 3
-      - run: "echo job ${{ github_job }}"
+      - name: Job number 3
+        run: echo "Running job ${{ github.job }}"
+
   job_4:
     runs-on: ubuntu-latest
-    needs: [job_2,job_3]
+    needs: [job_2, job_3]
     steps:
-      - name: job nubner 4
-      - run: "echo job ${{ github_job }}"
-
-  
+      - name: Job number 4
+        run: echo "Running job ${{ github.job }}"
