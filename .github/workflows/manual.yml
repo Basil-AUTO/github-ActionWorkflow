@@ -1,0 +1,12 @@
+name: just test manual github action
+
+on: 
+  workflow_dispatch:
+
+jobs:
+  manual-job:
+    runs-on: ubuntu-slim
+    steps:
+      - name: Deploy application
+        run: echo "sent new appliction to production environment"
+  
