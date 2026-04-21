@@ -5,6 +5,6 @@ jobs:
   handel_incedent:
     runs-on: ubuntu-latest
     steps:
-      - name: Print incident details
+      - name: sami
       - run: echo "Inndident report"
       
