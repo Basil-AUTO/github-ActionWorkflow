@@ -16,3 +16,10 @@ jobs:
       
       - name: Print incident
         run: echo "Incident report received"
+
+
+# curl --ssl-no-revoke -X POST \
+#   -H "Authorization: token $GITHUB_PAT" \
+#   -H "Accept: application/vnd.github.v3+json" \
+#   https://api.github.com/repos/Basil-AUTO/github-ActionWorkflow/dispatches \
+#   -d '{"event_type":"incident_report"}'
